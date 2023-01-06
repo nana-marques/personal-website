@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="custom.css">
+
+    <script src="main.js"></script>
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script><title>Ana - Website</title>
+
+    
+</head>
+<body id="main">
+    <nav class="navbar navbar-expand-lg justify-content-end navbar-dark mr-auto">
+        <div class="container-fluid d-flex flex-grow-1">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Ana Marques - Website</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto flex-nowrap navbar-right">
+                    <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Portfólio</a>
+                    <a class="nav-item nav-link" href="#">Contato</a>
+                    <div class="custom-control custom-switch d-flex align-items-center">
+                        <input type="checkbox" class="custom-control-input" name="dark-mode" id="selector" onclick="darkLight()">
+                        <!-- <span class="slider"></span> -->
+                        <label for="selector" class="custom-control-label text-white switch">Dark Mode</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4" id="begin">Olá, me chamo Ana!</h1>
+                <p>Sou estudante de Ciência da Computação e sou Desenvolvedora FullStack, ainda aprendendo. Estou trabalhando no momento com Codeigniter(PHP) e me especializando em HTML + CSS através de mini-projetos. </p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Contato &raquo;</a></p>
+            </div>
+        </div>
+      
+        <div class="container">
+          <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Google Clone</h2>
+                    <img src="./assets/google.png" alt="Google Clone" width="350" height="175" id="myImg">
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <p class="mt-2">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Confeitaria</h2>
+                    <img src="./assets/confeitaria.png" alt="Site de Confeitaria" width="350" height="175" id="myImg2">
+                    <div id="myModal2" class="modal2">
+                        <span class="close2">&times;</span>
+                        <img class="modal-content2" id="img02">
+                        <div id="caption2"></div>
+                    </div>
+                    <p class="mt-2">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
+                </div>
+            </div>
+      
+            <hr>
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class="uil uil-arrow-up scrollup__icon"></i>
+            </a>
+      
+        </div> <!-- /container -->
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
+                </div>
+                <!-- <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div> -->
+            </div>
+        
+            <hr>
+            
+        
+        </div> <!-- /container -->
+      
+        <div class="container mb-5">
+            <div class="row justify-content-center" style="max-width: 100%;">
+                <div class="col-md-5 mt-5">
+                    <h1 class="text-center">Contato</h1>
+                    <hr>
+                    <form>
+                        <div class="form-outline mb-4">
+                            <label class="form-label contato" for="nome">Nome</label>
+                            <input type="text" id="nome" class="form-control" />
+                        </div>
+                    
+                        <div class="form-outline mb-4">
+                            <label class="form-label contato" for="email">E-mail</label>
+                            <input type="email" id="email" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem" class="contato">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4"></textarea>
+                        </div>
+                    
+                        <button type="submit" class="btn btn-primary btn-block mb-5">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+      
+      
+    
+
+    <script>
+        // $(document).ready(function(){
+        //     $("#selector").change(
+        //         function(){
+        //             $("body").toggleClass("bg-secondary");
+        //             $("nav").toggleClass("navbar-pdark bg-pdark");
+        //             // $(".custom-control-label").toggleClass("text-white");
+        //             $("h1").toggleClass("text-white");
+        //             $("h2").toggleClass("text-white");
+        //             $("hr").toggleClass("jumbotron-d");
+        //             $("p").toggleClass("text-white");
+        //             $("h5").toggleClass("text-white");
+        //             $("label").toggleClass("text-white");
+        //             $(".jumbotron").toggleClass("jumbotron-d");
+        //             $(".btn-secondary").toggleClass(".btn-dark");
+        //             $('#body').toggleClass('dark');
+        //         }
+        //     )
+        // });
+
+
+        $('#main').toggleClass(localStorage.toggled);
+
+        function darkLight() {
+        /*DARK CLASS*/
+            
+            if (localStorage.toggled == 'dark') {
+
+                $("body").toggleClass("bg-secondary");
+                $("nav").toggleClass("navbar-pdark bg-pdark");
+                $("h1").toggleClass("text-white");
+                $("h2").toggleClass("text-white");
+                $("hr").toggleClass("jumbotron-d");
+                $("p").toggleClass("text-white");
+                $("h5").toggleClass("text-white");
+                $(".contato").toggleClass("text-white");
+                $(".jumbotron").toggleClass("jumbotron-d");
+                $(".btn-secondary").toggleClass(".btn-dark");
+                $('#main').toggleClass('dark', true);
+                localStorage.toggled = "dark";
+                //console.log("dark on");
+
+                // $( '#selector' ).prop( "checked", true );
+                //console.log("checktrue");
+                //theme = "DARK";
+                
+            } else {
+                $('#main').toggleClass('dark', false);
+                localStorage.toggled = "";
+                //console.log("else - dark off");
+                //theme = "LIGHT";
+            }
+        }
+
+        
+        if ($('#main').hasClass('dark')) {
+            console.log("checked true");
+            $( '#selector' ).prop( "checked", false );
+        } else {
+            console.log("checked false");
+            $( '#selector' ).prop( "checked", true );
+        }
+
+        
+
+        
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        }
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+
+
+
+        // Get the modal
+        var modal2 = document.getElementById('myModal2');
+        
+        var img2 = document.getElementById('myImg2');
+        var modalImg2 = document.getElementById("img02");
+        var captionText = document.getElementById("caption2");
+        img2.onclick = function(){
+        modal2.style.display = "block";
+        modalImg2.src = this.src;
+        captionText.innerHTML = this.alt;
+        }
+        
+        var span = document.getElementsByClassName("close2")[0];
+        
+        span.onclick = function() { 
+        modal2.style.display = "none";
+        }
+    </script>
+
+</body>
+    <footer class="container">
+        <p>&copy; Company - 2023 </p>
+    </footer>
+</html>
