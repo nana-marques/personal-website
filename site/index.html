@@ -23,7 +23,7 @@
 
     
 </head>
-<body id="main">
+<body id="main" class="bg-secondary">
     <nav class="navbar navbar-expand-lg justify-content-end navbar-dark mr-auto">
         <div class="container-fluid d-flex flex-grow-1">
             <div class="navbar-header">
@@ -37,10 +37,11 @@
                     <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#">Portfólio</a>
                     <a class="nav-item nav-link" href="#">Contato</a>
-                    <div class="custom-control custom-switch d-flex align-items-center">
-                        <input type="checkbox" class="custom-control-input" name="dark-mode" id="selector" onclick="darkLight()">
-                        <!-- <span class="slider"></span> -->
-                        <label for="selector" class="custom-control-label text-white switch">Dark Mode</label>
+                    <div class=" d-flex align-items-center">
+                        <button style="background-color: transparent; border: none; height: 2em; width: 2em;" title="Dark Mode">
+                            <i class="uil uil-moon" style="color: #f7f7f7;" id="dark-mode-toggle"></i>
+                        </button>
+                        <!-- <label for="dark-mode-toggle" class="text-white dark-mode-btn" >Dark Mode</label> -->
                     </div>
                 </div>
             </div>
@@ -53,8 +54,8 @@
         <div class="jumbotron">
             <div class="container">
                 <h1 class="display-4" id="begin">Olá, me chamo Ana!</h1>
-                <p>Sou estudante de Ciência da Computação e sou Desenvolvedora FullStack, ainda aprendendo. Estou trabalhando no momento com Codeigniter(PHP) e me especializando em HTML + CSS através de mini-projetos. </p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Contato &raquo;</a></p>
+                <p class="text">Sou estudante de Ciência da Computação e sou Desenvolvedora FullStack, ainda aprendendo. Estou trabalhando no momento com Codeigniter(PHP) e me especializando em HTML + CSS através de mini-projetos. </p>
+                <p><a class="btn btn-primary btn-lg" href="#contato" role="button">Contato &raquo;</a></p>
             </div>
         </div>
       
@@ -62,30 +63,30 @@
           <!-- Example row of columns -->
             <div class="row">
                 <div class="col-md-4">
-                    <h2>Google Clone</h2>
+                    <h2 class="text">Google Clone</h2>
                     <img src="./assets/google.png" alt="Google Clone" width="350" height="175" id="myImg">
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="img01">
                         <div id="caption"></div>
                     </div>
-                    <p class="mt-2">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                    <p class="mt-2 text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
                     <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h2>Confeitaria</h2>
+                    <h2 class="text">Confeitaria</h2>
                     <img src="./assets/confeitaria.png" alt="Site de Confeitaria" width="350" height="175" id="myImg2">
                     <div id="myModal2" class="modal2">
                         <span class="close2">&times;</span>
                         <img class="modal-content2" id="img02">
                         <div id="caption2"></div>
                     </div>
-                    <p class="mt-2">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                    <p class="mt-2 text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
                     <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h2 class="text">Heading</h2>
+                    <p class="mt-2 text">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                     <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
                 </div>
             </div>
@@ -100,13 +101,13 @@
             <!-- Example row of columns -->
             <div class="row">
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                    <h2 class="text">Heading</h2>
+                    <p class="mt-2 text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
                     <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                    <h2 class="text">Heading</h2>
+                    <p class="mt-2 text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
                     <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
                 </div>
                 <!-- <div class="col-md-4">
@@ -124,25 +125,25 @@
         <div class="container mb-5">
             <div class="row justify-content-center" style="max-width: 100%;">
                 <div class="col-md-5 mt-5">
-                    <h1 class="text-center">Contato</h1>
+                    <h1 class="text-center text" id="contato">Contato</h1>
                     <hr>
                     <form>
                         <div class="form-outline mb-4">
-                            <label class="form-label contato" for="nome">Nome</label>
+                            <label class="form-label contato text" for="nome">Nome</label>
                             <input type="text" id="nome" class="form-control" />
                         </div>
                     
                         <div class="form-outline mb-4">
-                            <label class="form-label contato" for="email">E-mail</label>
+                            <label class="form-label contato text" for="email">E-mail</label>
                             <input type="email" id="email" class="form-control" />
                         </div>
 
                         <div class="form-group">
-                            <label for="mensagem" class="contato">Mensagem</label>
+                            <label for="mensagem" class="contato text">Mensagem</label>
                             <textarea class="form-control" id="mensagem" rows="4"></textarea>
                         </div>
                     
-                        <button type="submit" class="btn btn-primary btn-block mb-5">Enviar</button>
+                        <button type="submit" class="btn btn-dark btn-block mb-5 text-white">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -151,71 +152,126 @@
       
       
     
-
     <script>
-        // $(document).ready(function(){
-        //     $("#selector").change(
+        // check for saved 'darkMode' in localStorage
+    let darkMode = localStorage.getItem('darkMode'); 
+
+    const darkModeToggle = document.querySelector('#dark-mode-toggle');
+
+    const enableDarkMode = () => {
+    // 1. Add the class to the body
+    document.body.classList.add('darkmode');
+    // 2. Update darkMode in localStorage
+    localStorage.setItem('darkMode', 'enabled');
+    }
+
+    const disableDarkMode = () => {
+    // 1. Remove the class from the body
+    document.body.classList.remove('darkmode');
+    // 2. Update darkMode in localStorage 
+    localStorage.setItem('darkMode', null);
+    }
+    
+    // If the user already visited and enabled darkMode
+    // start things off with it on
+    if (darkMode === 'enabled') {
+    enableDarkMode();
+    }
+
+    // When someone clicks the button
+    darkModeToggle.addEventListener('click', () => {
+    // get their darkMode setting
+    darkMode = localStorage.getItem('darkMode'); 
+    
+    // if it not current enabled, enable it
+    if (darkMode !== 'enabled') {
+        enableDarkMode();
+    // if it has been enabled, turn it off  
+    } else {  
+        disableDarkMode(); 
+    }
+    });
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#selector").change(
+                function(){
+                    $("body").toggleClass("bg-secondary");
+                    $("nav").toggleClass("navbar-pdark bg-pdark");
+                    // $(".custom-control-label").toggleClass("text-white");
+                    $("h1").toggleClass("text-white");
+                    $("h2").toggleClass("text-white");
+                    $("hr").toggleClass("jumbotron-d");
+                    $("p").toggleClass("text-white");
+                    $("h5").toggleClass("text-white");
+                    $(".contato").toggleClass("text-white");
+                    $(".jumbotron").toggleClass("jumbotron-d");
+                    $(".btn-secondary").toggleClass(".btn-dark");
+                    $('#body').toggleClass('dark');
+                }  
+            )    
+        });
+
+        // document.querySelector(document).ready(function(){
+        //     document.querySelector("#selector").change(
         //         function(){
-        //             $("body").toggleClass("bg-secondary");
-        //             $("nav").toggleClass("navbar-pdark bg-pdark");
-        //             // $(".custom-control-label").toggleClass("text-white");
-        //             $("h1").toggleClass("text-white");
-        //             $("h2").toggleClass("text-white");
-        //             $("hr").toggleClass("jumbotron-d");
-        //             $("p").toggleClass("text-white");
-        //             $("h5").toggleClass("text-white");
-        //             $("label").toggleClass("text-white");
-        //             $(".jumbotron").toggleClass("jumbotron-d");
-        //             $(".btn-secondary").toggleClass(".btn-dark");
-        //             $('#body').toggleClass('dark');
-        //         }
-        //     )
+        //             document.body.classList.toggle("bg-secondary");
+        //             document.querySelector("nav").classList.toggle("navbar-pdark bg-pdark");
+        //             // document.querySelector(".custom-control-label").classList.toggle("text-white");
+        //             document.querySelector("h1").classList.toggle("text-white");
+        //             document.querySelector("h2").classList.toggle("text-white");
+        //             document.querySelector("hr").classList.toggle("jumbotron-d");
+        //             document.querySelector("p").classList.toggle("text-white");
+        //             document.querySelector("h5").classList.toggle("text-white");
+        //             document.querySelector(".contato").classList.toggle("text-white");
+        //             document.querySelector(".jumbotron").classList.toggle("jumbotron-d");
+        //             document.querySelector(".btn-secondary").classList.toggle(".btn-dark");
+        //             document.querySelector('#body').classList.toggle('dark');
+        //         }  
+        //     )    
         // });
 
+        // $('#main').toggleClass(localStorage.toggled);
 
-        $('#main').toggleClass(localStorage.toggled);
-
-        function darkLight() {
-        /*DARK CLASS*/
+        // function darkLight() {
+        
             
-            if (localStorage.toggled == 'dark') {
+        //     if (localStorage.toggled == 'dark') {
 
-                $("body").toggleClass("bg-secondary");
-                $("nav").toggleClass("navbar-pdark bg-pdark");
-                $("h1").toggleClass("text-white");
-                $("h2").toggleClass("text-white");
-                $("hr").toggleClass("jumbotron-d");
-                $("p").toggleClass("text-white");
-                $("h5").toggleClass("text-white");
-                $(".contato").toggleClass("text-white");
-                $(".jumbotron").toggleClass("jumbotron-d");
-                $(".btn-secondary").toggleClass(".btn-dark");
-                $('#main').toggleClass('dark', true);
-                localStorage.toggled = "dark";
-                //console.log("dark on");
+        //         $("body").toggleClass("bg-secondary");
+        //         $("nav").toggleClass("navbar-pdark bg-pdark");
+        //         $("h1").toggleClass("text-white");
+        //         $("h2").toggleClass("text-white");
+        //         $("hr").toggleClass("jumbotron-d");
+        //         $("p").toggleClass("text-white");
+        //         $("h5").toggleClass("text-white");
+        //         $(".contato").toggleClass("text-white");
+        //         $(".jumbotron").toggleClass("jumbotron-d");
+        //         $(".btn-secondary").toggleClass(".btn-dark");
+        //         $('#main').toggleClass('dark', true);
+        //         localStorage.toggled = "dark";
+        //         console.log("dark on");
 
-                // $( '#selector' ).prop( "checked", true );
-                //console.log("checktrue");
-                //theme = "DARK";
+        //         console.log("checktrue");
                 
-            } else {
-                $('#main').toggleClass('dark', false);
-                localStorage.toggled = "";
-                //console.log("else - dark off");
-                //theme = "LIGHT";
-            }
-        }
+        //     } else {
+        //         $('#main').toggleClass('dark', false);
+        //         localStorage.toggled = "";
+        //         console.log("else - dark off");
+        //     }
+        // }
 
         
-        if ($('#main').hasClass('dark')) {
-            console.log("checked true");
-            $( '#selector' ).prop( "checked", false );
-        } else {
-            console.log("checked false");
-            $( '#selector' ).prop( "checked", true );
-        }
-
+        // if ($('#main').hasClass('dark')) {
+        //     console.log("checked true");
+        //     $( '#selector' ).prop( "checked", true );
+        // } 
         
+        // if (($('#selector').prop( "checked")) == false ) {
+        //     console.log("checked false");
+        //     $( '#selector' ).prop( "checked", false );  
+        // }
 
         
     </script>
@@ -261,7 +317,7 @@
     </script>
 
 </body>
-    <footer class="container">
+    <footer class="container text">
         <p>&copy; Company - 2023 </p>
     </footer>
 </html>
