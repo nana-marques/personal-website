@@ -39,7 +39,7 @@
                     <a class="nav-item nav-link" href="#">Contato</a>
                     <div class=" d-flex align-items-center">
                         <button style="background-color: transparent; border: none; height: 2em; width: 2em;" title="Ativar/Desativar Dark Mode">
-                            <i class="uil uil-moon" style="color: #f7f7f7;" id="dark-mode-toggle"></i>
+                            <i class="uil uil-moon" style="color: #f7f7f7;" id="dark-mode-toggle" title="Ativar/Desativar Dark Mode"></i>
                         </button>
                         <!-- <label for="dark-mode-toggle" class="text-white dark-mode-btn" >Dark Mode</label> -->
                     </div>
@@ -85,8 +85,14 @@
                     <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h2 class="text">Heading</h2>
-                    <p class="mt-2 text">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h2 class="text">Previsão do Tempo</h2>
+                    <img src="./assets/weather-gif.gif" alt="Previsão do tempo" width="350" height="175" id="myImg3">
+                    <div id="myModal3" class="modal3">
+                        <span class="close3">&times;</span>
+                        <img class="modal-content3" id="img03">
+                        <div id="caption3"></div>
+                    </div>
+                    <p class="mt-2 text">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus.</p>
                     <p><a class="btn btn-secondary" href="#" role="button">Detalhes &raquo;</a></p>
                 </div>
             </div>
@@ -314,10 +320,29 @@
         span.onclick = function() { 
         modal2.style.display = "none";
         }
+
+        // Get the modal
+        var modal3 = document.getElementById('myModal3');
+        
+        var img3 = document.getElementById('myImg3');
+        var modalImg3 = document.getElementById("img03");
+        var captionText = document.getElementById("caption3");
+        img3.onclick = function(){
+        modal3.style.display = "block";
+        modalImg3.src = this.src;
+        captionText.innerHTML = this.alt;
+        }
+        
+        var span = document.getElementsByClassName("close3")[0];
+        
+        span.onclick = function() { 
+        modal3.style.display = "none";
+        }
+        
     </script>
 
 </body>
     <footer class="container text">
-        <p>&copy; Company - 2023 </p>
+        <p>&copy; Ana Marques - 2023 </p>
     </footer>
 </html>
